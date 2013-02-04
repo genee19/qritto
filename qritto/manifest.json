@@ -1,15 +1,12 @@
 {
 	"name": "Qritto",
 	"version": "0.1",
+	"manifest_version": 2,
 	"description": "The quickest QR Code maker with no interface at all :)",
 	"content_scripts": [
 	{
-		"matches": ["*"],
-		"js": ["vendors/zepto/zepto.js", "qritto.js"],
+		"matches": ["*://*/*"],
+		"js": ["vendors/zepto/zepto.js", "qritto.js"]
 	}
-	],
-	"icons": {
-		"48": "icon48.png",
-		"128": "icon128.png"
-	}
+	]
 }
